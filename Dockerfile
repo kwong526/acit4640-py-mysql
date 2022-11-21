@@ -10,9 +10,9 @@ RUN python -m pip install -r ./requirements.txt
 
 COPY ./backend/backend.conf .
 EXPOSE 8080
-CMD /app/.local/bin/gunicorn wsgi:app -b 0.0.0.0:0000
+CMD /app/.local/bin/gunicorn wsgi:app -b 0.0.0.0:8080
 
-FROM nginx
+# FROM nginx
 
-WORKDIR /usr/share/nginx/html
-COPY index.html ./index.html
+# WORKDIR /usr/share/nginx/html
+# COPY index.html ./index.html
