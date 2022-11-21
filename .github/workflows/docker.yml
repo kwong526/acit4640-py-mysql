@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: kwong526/demo4640:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo4640:latest

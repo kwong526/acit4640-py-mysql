@@ -2,7 +2,7 @@ version: '3'
 
 services:
   backend:
-    image: kwong526/demo4640:latest     # ADJUST WITH YOUR IMAGE NAME
+    image: ${{ secrets.DOCKERHUB_USERNAME }}/demo4640:latest     # ADJUST WITH YOUR IMAGE NAME
     depends_on:
       - database
     env_file:
